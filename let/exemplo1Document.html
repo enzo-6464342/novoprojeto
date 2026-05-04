@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo let no document</title>
+</head>
+<body>
+    <h1>Exemplo let no document</h1>
+    <label for="">digite um numero para multiplicar por 2</label>
+    <input type="number" id="multiplicar">
+    <button onclick="multiplicar()">clique aqui para multiplicar</button>
+    <p id="resultado"></p>
+    <script>
+        function multiplicar() {
+            let numero = document.getElementById("multiplicar").value;
+            numero = numero * 2;
+            document.getElementById("resultado").innerHTML = "o resultado e: " + numero;
+        }
+    </script>
+</body>
+</html>

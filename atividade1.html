@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade1</title>
+</head>
+<body>
+    <h1>exemplo var no document</h1>
+    <label for="nome">digite seu nome</label>
+    <input type="text" name="nome" id="nome">
+    <button onclick="mostrarnome()">mostrar nome</button>
+    <p id="resultado"></p>
+    <script>
+        function mostrarnome() {
+            var nome = document.getElementById("nome").value;
+            //mostrar
+            document.getElementById("resultado").innerHTML = "Ola, " + nome
+        console.log("ola, " + nome);
+        window.alert = ("ola," + nome);
+        var nome = Document.getElementById(nome).value
+        }
+    </script>
+    
+</body>
+</html>
