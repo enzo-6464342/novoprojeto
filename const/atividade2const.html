@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo ao sistema TecGerman</title>
+</head>
+
+<body>
+    <center>
+        <h1>Bem vindo ao sistema TecGerman</h1>
+
+        <center><label for="">Digite seu nome:</label><br>
+            <input type="text" id="nome">
+
+            <center><label for="">Digite um número:</label><br>
+                <input type="number" name="" id="number1">
+
+                <center><label for="">Digite o segundo numero:</label><br>
+                    <input type="number" name="" id="number2">
+
+                    <center><label for="">Digite o terceiro numero:</label><br>
+                        <input type="number" name="" id="number3">
+
+                        <center><button onclick="mostrar()">Entrar</button><br>
+
+                            <p id="resultado"></p>
+
+                            <script>
+                                function mostrar() {
+                                    const sistema = "Sistema TecGerman";
+                                    let nome = (document.getElementById("nome").value);
+                                    let numero1 = Number(document.getElementById("number1").value);
+                                    let numero2 = Number(document.getElementById("number2").value);
+                                    let numero3 = Number(document.getElementById("number3").value);
+                                    let resultado = numero1 * numero2 * numero3;
+                                    document.getElementById("resultado").innerHTML = "Bem vindo " + nome + " ao " + sistema + " O resultado da Multiplicação é: " + resultado;
+                                }
+                            </script>
+</body>
+
+</html>
