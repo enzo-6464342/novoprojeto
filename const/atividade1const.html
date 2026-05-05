@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade1</title>
+</head>
+<body>
+   <center><h1>Ola boa tarde</h1>
+<center><label for="nome">digite seu nome:</label><br>
+<input type="text" id="nome"><br>
+<center><label for="idade">digite sua idade:</label><br>
+<input type="number" id="idade">
+<center><button onclick="mostrar()">Entrar</button><br>
+<p id="resultado"></p>
+<script>
+    function mostrar() {
+        const sistema = "Sistema internacional";
+        let nome = document.getElementById("nome").value;
+        let idade  = document.getElementById("idade").value;
+        document.getElementById("resultado").innerHTML = "Bem vindo " + nome + " ao " + sistema + " você tem " + idade + " anos";
+    }
+</script>
+</body>
+</html>

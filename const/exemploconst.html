@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">digite seu nome:</label>
+
+    <input type="text" id="nome">
+    <button onclick="mostrar()">mostrar nome</button>
+    <p id="resultado"></p>      
+    <script>
+        const sistema = "Sistema Escolar";
+        function mostrar(){
+            let nome = document.getElementById("nome").value
+            document.getElementById("resultado").innerHTML = "Bem vindo  " + nome + " ao " + sistema;
+        }
+    </script>
+</body>
+</html>
